@@ -1,0 +1,23 @@
+package core.basesyntax;
+
+import java.util.List;
+import core.basesyntax.Strategy;
+import core.basesyntax.Inventory;
+
+public class ShopServiceImpl implements ShopService {
+    Strategy strategy;
+    Inventory inventory;
+
+    public ShopServiceImpl(Strategy strategy, Inventory inventory) {
+        this.strategy = strategy;
+        this.inventory = inventory;
+    }
+
+    @Override
+    public void process(List<Transaction> transactions) {
+        for (Transaction transaction : transactions) {
+            OperationHandler handler = strategy.getOperationHandler(transaction.getOperation());
+            handler.handle(transaction, inventory);
+        }
+    }
+}
