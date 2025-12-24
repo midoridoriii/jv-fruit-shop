@@ -5,8 +5,8 @@ import core.basesyntax.Strategy;
 import core.basesyntax.Inventory;
 
 public class ShopServiceImpl implements ShopService {
-    Strategy strategy;
-    Inventory inventory;
+    private final Strategy strategy;
+    private final Inventory inventory;
 
     public ShopServiceImpl(Strategy strategy, Inventory inventory) {
         this.strategy = strategy;
