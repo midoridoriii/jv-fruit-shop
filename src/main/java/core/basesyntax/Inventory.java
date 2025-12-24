@@ -18,4 +18,8 @@ public class Inventory {
             return quantity;
         }
     }
+
+    public Map<String, Integer> getAllFruits() {
+        return new HashMap<>(fruitInventory);
+    }
 }
