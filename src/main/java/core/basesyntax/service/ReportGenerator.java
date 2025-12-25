@@ -1,7 +1,6 @@
 package core.basesyntax.service;
 
 import core.basesyntax.db.Inventory;
-
 import java.util.List;
 
 public interface ReportGenerator {

@@ -1,9 +1,8 @@
-package core.basesyntax.serviceImpl;
+package core.basesyntax.serviceimpl;
 
 import core.basesyntax.model.Operation;
 import core.basesyntax.model.Transaction;
 import core.basesyntax.service.DataConverter;
-
 import java.util.ArrayList;
 import java.util.List;
 
