@@ -33,7 +33,7 @@ public class Main {
         FileWriter fileWriter = new FileWriterImpl();
 
         // 2) Read
-        String inputPath = "reportToRead.csv";
+        String inputPath = "src/main/resources/reportToRead.csv";
         List<String> lines = fileReader.read(inputPath);
 
         // 3) Convert
@@ -44,7 +44,7 @@ public class Main {
 
         // 5) Report + Write
         List<String> reportLines = reportGenerator.getReport(inventory);
-        String outputPath = "finalReport.csv";
+        String outputPath = "src/main/resources/finalReport.csv";
         fileWriter.write(reportLines, outputPath);
     }
 }
