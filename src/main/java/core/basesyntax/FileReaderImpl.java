@@ -1,9 +1,8 @@
 package core.basesyntax;
 
-import java.io.File;
-import java.util.List;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
 
 public class FileReaderImpl implements FileReader {
 

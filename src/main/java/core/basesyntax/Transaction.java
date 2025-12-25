@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import core.basesyntax.Operation;
-
 public class Transaction {
     private Operation operation;
     private String fruit;

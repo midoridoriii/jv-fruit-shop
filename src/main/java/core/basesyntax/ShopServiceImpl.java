@@ -1,8 +1,6 @@
 package core.basesyntax;
 
 import java.util.List;
-import core.basesyntax.Strategy;
-import core.basesyntax.Inventory;
 
 public class ShopServiceImpl implements ShopService {
     private final Strategy strategy;

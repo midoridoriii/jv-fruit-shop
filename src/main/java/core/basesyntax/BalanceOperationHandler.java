@@ -1,8 +1,5 @@
 package core.basesyntax;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class BalanceOperationHandler implements OperationHandler {
 
     @Override

@@ -1,9 +1,6 @@
 package core.basesyntax;
 
-import java.util.HashMap;
 import java.util.Map;
-import core.basesyntax.Operation;
-import core.basesyntax.OperationHandler;
 
 public class StrategyImpl implements Strategy {
     private final Map<Operation, OperationHandler> operationHandlerMap;
