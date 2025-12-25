@@ -6,12 +6,12 @@ import java.util.List;
 public class DataConverterImpl implements DataConverter {
 
     @Override
-    public Transaction convert(String line) {
-        if (line.startsWith("type")) {
-            throw new RuntimeException("Header row");
+    public Transaction convert(String lines) {
+        if (lines.startsWith("type")) {
+            return null;
         }
         Operation operation;
-        String[] parts = line.split(",");
+        String[] parts = lines.split(",");
         switch (parts[0]) {
             case "b":
                 operation = Operation.BALANCE;
