@@ -1,4 +1,7 @@
-package core.basesyntax;
+package core.basesyntax.strategy;
+
+import core.basesyntax.db.Inventory;
+import core.basesyntax.model.Transaction;
 
 public class PurchaseOperationHandler implements OperationHandler {
 

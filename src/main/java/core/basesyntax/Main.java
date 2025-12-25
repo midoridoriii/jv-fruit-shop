@@ -1,5 +1,12 @@
 package core.basesyntax;
 
+import core.basesyntax.db.Inventory;
+import core.basesyntax.model.Operation;
+import core.basesyntax.model.Transaction;
+import core.basesyntax.service.*;
+import core.basesyntax.serviceImpl.*;
+import core.basesyntax.strategy.*;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

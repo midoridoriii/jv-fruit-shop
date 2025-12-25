@@ -1,4 +1,6 @@
-package core.basesyntax;
+package core.basesyntax.serviceImpl;
+
+import core.basesyntax.service.FileReader;
 
 import java.nio.file.Files;
 import java.nio.file.Path;

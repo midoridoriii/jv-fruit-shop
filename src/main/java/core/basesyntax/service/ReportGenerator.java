@@ -1,4 +1,6 @@
-package core.basesyntax;
+package core.basesyntax.service;
+
+import core.basesyntax.db.Inventory;
 
 import java.util.List;
 

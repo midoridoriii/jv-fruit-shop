@@ -1,6 +1,9 @@
-package core.basesyntax;
+package core.basesyntax.strategy;
 
-public class ReturnOperationHandler implements OperationHandler {
+import core.basesyntax.db.Inventory;
+import core.basesyntax.model.Transaction;
+
+public class SupplyOperationHandler implements OperationHandler {
 
     @Override
     public void handle(Transaction transaction, Inventory inventory) {

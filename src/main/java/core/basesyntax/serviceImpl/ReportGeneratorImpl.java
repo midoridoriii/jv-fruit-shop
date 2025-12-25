@@ -1,4 +1,7 @@
-package core.basesyntax;
+package core.basesyntax.serviceImpl;
+
+import core.basesyntax.db.Inventory;
+import core.basesyntax.service.ReportGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
