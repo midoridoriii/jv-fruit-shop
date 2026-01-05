@@ -27,7 +27,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
 
-        // 1) Core компоненти
+
         FileReader fileReader = new FileReaderImpl();
         DataConverter dataConverter = new DataConverterImpl();
 
@@ -45,17 +45,17 @@ public class Main {
         ReportGenerator reportGenerator = new ReportGeneratorImpl();
         FileWriter fileWriter = new FileWriterImpl();
 
-        // 2) Read
+
         String inputPath = "src/main/resources/reportToRead.csv";
         List<String> lines = fileReader.read(inputPath);
 
-        // 3) Convert
+
         List<Transaction> transactions = dataConverter.convert(lines);
 
-        // 4) Process
+
         shopService.process(transactions);
 
-        // 5) Report + Write
+
         List<String> reportLines = reportGenerator.getReport(inventory);
         String outputPath = "src/main/resources/finalReport.csv";
         fileWriter.write(reportLines, outputPath);
