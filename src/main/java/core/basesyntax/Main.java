@@ -27,7 +27,6 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
 
-
         FileReader fileReader = new FileReaderImpl();
         DataConverter dataConverter = new DataConverterImpl();
 
@@ -45,16 +44,12 @@ public class Main {
         ReportGenerator reportGenerator = new ReportGeneratorImpl();
         FileWriter fileWriter = new FileWriterImpl();
 
-
         String inputPath = "src/main/resources/reportToRead.csv";
         List<String> lines = fileReader.read(inputPath);
 
-
         List<Transaction> transactions = dataConverter.convert(lines);
 
-
         shopService.process(transactions);
-
 
         List<String> reportLines = reportGenerator.getReport(inventory);
         String outputPath = "src/main/resources/finalReport.csv";
